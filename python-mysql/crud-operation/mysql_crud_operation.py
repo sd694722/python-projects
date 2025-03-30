@@ -44,7 +44,7 @@ def update_student():
         print("Invalid student id\n")
         return
     student_id = int(student_id)
-    sql_select = "SELECT * FROM students WHERE id = {student_id}"
+    sql_select = "SELECT * FROM students WHERE student_id = {student_id}"
     cursor.execute(sql_select.format(student_id=student_id))
     result = cursor.fetchall()
     if not result:
