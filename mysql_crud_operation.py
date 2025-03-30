@@ -75,7 +75,7 @@ def update_student():
         sql_update = sql_update.format(age=age, student_id=student_id)
         cursor.execute(sql_update)
         conn.commit()
-        print("Record updated successfully")
+        print("Record updated successfullys")
     elif key == 3:
         phone_number = input("Enter new phone number: ")
         sql_update = "UPDATE students SET phone_number = '{phone_number}' WHERE student_id = {student_id}"
